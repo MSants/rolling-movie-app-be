@@ -1,14 +1,14 @@
 {
-  "name": "Nueva",
+  "name": "Rolling Movie API",
   "version": "1.0.0",
-  "description": "",
+  "description": "Aplicacion de integracion de conocimiento de Curso Full Stack - RollingCode",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Macarena Suarez y Cristian Martinez. Mentor: Luis Mender",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
