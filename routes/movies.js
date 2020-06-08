@@ -1,5 +1,5 @@
 const router = require('express').Router();
-var Genero = require('../models/movie');
+var Movie = require('../models/movie');
 
 router.get('/', req,res =>{
     Movie.find()
