@@ -15,7 +15,7 @@ const Movie = require('./models/movie');
 
 
 // settings
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3001);
 
 // middleware
 app.use(bodyParser.urlencoded({extended:false }))
@@ -40,9 +40,10 @@ app.use(bodyParser.json())
 // })
 
 const generosRouter = require('./routes/generos')
-// const moviesRouter = require('./routes/movies')
+const moviesRouter = require('./routes/movies')
 
 app.use('/generos', generosRouter);
+app.use('/movies', moviesRouter)
 // app.use('/movies', moviesRouter);
 
 // NOTA PARA PUSH DE GENROOOSSS
