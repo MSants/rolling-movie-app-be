@@ -10,7 +10,7 @@ router.route('/').get((req,res) =>{
 router.route('/add').post( async(req,res) =>{
     const generoT = req.body;
 
-    const newGenero = await new Generp({generoT});
+    const newGenero = await new Genero({generoT});
 
     newGenero.save()
     .then(() => res.json('Gener Added'))
