@@ -1,7 +1,7 @@
 const router = require('express').Router();
 var Movie = require('../models/movie');
 
-router.get('/', req,res =>{
+router.get('/', (req,res) =>{
     Movie.find()
     .then(movies => res.json(movies))
     .catch(err => res.status(400).json(err))
