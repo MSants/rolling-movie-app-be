@@ -13,6 +13,13 @@ router.get('/', (req, res) => {
     .catch(err => res.status(400).json({ message: err.message }))
 })
 
+// GET: Ver una pelicula por id
+router.get('/:movie_id', getMovie, async (req, res) => {
+  const movie = res.movie;
+  res.json(movie)
+});
+
+
 // POST: Crear nueva pelicula
 router.post('/', async (req, res) => {
   const movie = req.body;
