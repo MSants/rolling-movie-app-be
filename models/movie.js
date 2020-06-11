@@ -2,11 +2,11 @@ const mongoose = require('mongoose')
 const movieSchema = mongoose.Schema({
     title: {
         type: String,
-        require: true
+        required: true
     },
     synopsis: {
         type: String,
-        require: true
+        required: true
     },
     genres: {
         type: Array
@@ -19,7 +19,7 @@ const movieSchema = mongoose.Schema({
     },
     director: {
         type: String,
-        require: true
+        required: true
     },
     actors: {
         type: Array
